@@ -1,0 +1,6 @@
+{
+  "name": "PopQuiz",
+  "description": "Know Your Trade. Win The Night. A fast-paced trading quiz app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

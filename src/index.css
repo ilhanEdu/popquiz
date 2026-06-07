@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+
+  --color-warm-bg: #FFF6EC;
+  --color-warm-card: #FFFFFF;
+  --color-warm-soft: #FFF0DE;
+  --color-warm-lavender: #EDE8FF;
+  --color-warm-mint: #E2F9EE;
+  --color-warm-rose: #FFE8EC;
+  --color-warm-input: #F5F0EA;
+  
+  --color-warm-accent: #FFB347;
+  --color-warm-accent-dark: #E89820;
+  --color-warm-purple: #9B8FFF;
+  --color-warm-green: #34C77B;
+  --color-warm-red: #FF5A6E;
+  
+  --color-warm-text: #1A1A2E;
+  --color-warm-text-mid: #4A4A6A;
+  --color-warm-text-light: #8888A8;
+  
+  --color-warm-btn: #1A1A2E;
+  --color-warm-btn-h: #2A2A44;
+}
+
+body {
+  background-color: var(--color-warm-bg);
+  color: var(--color-warm-text);
+  font-family: var(--font-sans);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  z-index: 0;
+}

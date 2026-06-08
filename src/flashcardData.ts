@@ -129,7 +129,7 @@ export const FLASHCARDS: Flashcard[] = [
     category: "Margin System",
     term: "Cross Margin",
     definition: "Your entire account balance backs all open positions. A winning trade can rescue a losing one, but a big loss can drain your whole account.",
-    emojiUrl: emoji('Lock/3D/lock_3d.png'),
+    emojiUrl: emoji('Locked/3D/locked_3d.png'),
     imageUrl: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?q=80&w=1740&auto=format&fit=crop',
     gradient: 'linear-gradient(145deg, #1E3A2E 0%, #0F241B 100%)'
   },
@@ -309,7 +309,7 @@ export const FLASHCARDS: Flashcard[] = [
     category: "AMM & Liquidity",
     term: "vAMM",
     definition: "Virtual AMM. An AMM used purely for price discovery in perpetual protocols. No real tokens are deposited. It only handles the math.",
-    emojiUrl: emoji('Lock/3D/lock_3d.png'),
+    emojiUrl: emoji('Locked/3D/locked_3d.png'),
     imageUrl: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1740&auto=format&fit=crop',
     gradient: 'linear-gradient(145deg, #2A2440 0%, #161228 100%)'
   },

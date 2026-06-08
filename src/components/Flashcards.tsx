@@ -98,32 +98,19 @@ export default function Flashcards({ onBack }: FlashcardsProps) {
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: direction * -60, scale: 0.95 }}
             transition={{ duration: 0.25, ease: 'easeOut' }}
-            className="flex w-full max-w-[440px] cursor-grab touch-pan-y"
+            className="flex w-full max-w-[440px] cursor-grab touch-none"
           >
             <FlashcardCard card={current} />
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* Swipe hint + progress dots */}
+      {/* Swipe hint */}
       <div className="flex flex-col items-center gap-3 mt-5 shrink-0">
         <div className="flex items-center gap-1.5 text-[12px] font-semibold text-[#A39E93]">
           <ChevronLeft size={14} />
           Swipe to browse
           <ChevronRight size={14} />
-        </div>
-
-        <div className="flex items-center justify-center gap-1.5 flex-wrap max-w-[240px]">
-          {deck.map((c, i) => (
-            <button
-              key={c.id}
-              onClick={() => go(i, i > index ? 1 : -1)}
-              aria-label={`Go to card ${i + 1}`}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                i === index ? 'w-5 bg-[#1C1A17]' : 'w-1.5 bg-[#D9D3C8] hover:bg-[#B7B0A3]'
-              }`}
-            />
-          ))}
         </div>
       </div>
     </div>

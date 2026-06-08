@@ -30,6 +30,7 @@ body {
   background-color: var(--color-warm-bg);
   color: var(--color-warm-text);
   font-family: var(--font-sans);
+  overscroll-behavior: none;
 }
 
 body::before {
